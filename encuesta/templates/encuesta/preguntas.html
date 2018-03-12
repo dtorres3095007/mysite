@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+{% block container %}
+<h2>{{ pregunta.pregunta_titulo }}</h2>
+
+<form action="{% url 'encuesta:votar' pregunta.id %}" method="post" class="col-md-8">
+{% csrf_token %}
+{% for respuesta in pregunta.respuesta_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ respuesta.id }}" />
+    <label for="choice{{ forloop.counter }}">{{ respuesta.respuesta_titulo }}</label><br />
+{% endfor %}
+<input type="submit" value="VOTAR" class="btn btn-primary " />
+</form>
+{% endblock container %}

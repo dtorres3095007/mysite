@@ -1,0 +1,22 @@
+li a {
+   
+    text-decoration: none;
+
+}
+li a:hover {
+
+    text-decoration: none;
+
+}
+body{
+	background: white url("../imagenes/LogocucF.png") no-repeat;
+	background-position: 50%;
+	background-size: 15%;
+	font-family: serif;;
+}
+.pregunta{
+	font-size: 20px;
+}
+body nav{
+	background-color: red;
+}

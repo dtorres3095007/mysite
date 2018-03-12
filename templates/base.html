@@ -1,0 +1,39 @@
+{% load staticfiles %}
+    <html>
+        <head>
+            <title>Encuesta CUC</title>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="{% static 'encuesta/css/style.css' %}">
+        </head>
+		<body>
+				<nav class="navbar navbar-dark bg-primary">
+				  <div class="container-fluid">
+				    <div class="navbar-header">
+
+				      <a class="navbar-brand" href="{% url 'encuesta:index' %}" style="color: white"> EncuestaCUC</a>
+				    </div>
+				  </div>
+				</nav>
+
+      		  		<div class="content container">
+           		 <div class="row">
+               		 <div class="col-md-12">
+                         {% if messages %}
+                        <div class="messages">
+                            {% for message in messages %}
+                                <div {% if message.tags %} class="alert alert-{% if message.tags == 'error' %}danger{% else%}{{ message.tags }}{% endif %} alert-dismissible"{% endif %} role='alert'>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                         {{ message }}
+                                </div>
+                        {% endfor %}
+                        </div>
+                        {% endif %}
+                        {% block container %}
+                		{% endblock container %}
+                		</div>
+            		</div>
+        	</div>
+    	</body>
+    </html>
