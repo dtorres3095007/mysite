@@ -9,6 +9,7 @@
     <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ respuesta.id }}" />
     <label for="choice{{ forloop.counter }}">{{ respuesta.respuesta_titulo }}</label><br />
 {% endfor %}
-<input type="submit" value="VOTAR" class="btn btn-primary " />
+<input type="submit" value="Votar" class="btn btn-default" />
 </form>
+<div id="div-pregunta"></div>
 {% endblock container %}

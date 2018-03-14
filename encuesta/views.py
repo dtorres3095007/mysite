@@ -32,7 +32,7 @@ def votar(request, pregunta_id):
     except (KeyError, Respuesta.DoesNotExist):
         # Redisplay the question voting form.
         messages.add_message(request, messages.ERROR, 'Debe Seleccionar una Respuesta.')
-        return render(request, 'encuesta/detalle.html', {
+        return render(request, 'encuesta/preguntas.html', {
             'pregunta': pregunta,
            
         })

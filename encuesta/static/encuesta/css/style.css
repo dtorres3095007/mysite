@@ -1,3 +1,8 @@
+body,html{
+margin: 0;
+padding: 0;
+overflow-y: hidden;
+}
 li a {
    
     text-decoration: none;
@@ -9,14 +14,53 @@ li a:hover {
 
 }
 body{
-	background: white url("../imagenes/LogocucF.png") no-repeat;
-	background-position: 50%;
-	background-size: 15%;
-	font-family: serif;;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b0001+0,3c0f00+0,3c0f00+0,720000+41,3c0f00+100,6b0001+100,330b00+100,3c0f00+100 */
+background: rgb(107,0,1); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(107,0,1,1) 0%, rgba(60,15,0,1) 0%, rgba(60,15,0,1) 0%, rgba(114,0,0,1) 41%, rgba(60,15,0,1) 100%, rgba(107,0,1,1) 100%, rgba(51,11,0,1) 100%, rgba(60,15,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(107,0,1,1) 0%,rgba(60,15,0,1) 0%,rgba(60,15,0,1) 0%,rgba(114,0,0,1) 41%,rgba(60,15,0,1) 100%,rgba(107,0,1,1) 100%,rgba(51,11,0,1) 100%,rgba(60,15,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(107,0,1,1) 0%,rgba(60,15,0,1) 0%,rgba(60,15,0,1) 0%,rgba(114,0,0,1) 41%,rgba(60,15,0,1) 100%,rgba(107,0,1,1) 100%,rgba(51,11,0,1) 100%,rgba(60,15,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0001', endColorstr='#3c0f00',GradientType=1 ); /* IE6-9 */background-repeat: no-repeat;
+background-size: 100%;
+font-family: serif;;
+
 }
 .pregunta{
 	font-size: 20px;
 }
-body nav{
-	background-color: red;
+
+#principal{
+	background: transparent url("../imagenes/LogocucF.png") no-repeat;
+	background-position-y:10px;
+	background-size: 10%;
+	height: 100%;
+	padding: 10%;
+}
+label,p,h1,h2{
+	color: white;
+}
+p{
+	font-size: 15px;
+}
+.btn{
+	font-weight: bold !important;
+}
+#div-terminado{
+	height: 100%;
+
+	background: transparent url("../imagenes/terminado.gif") no-repeat;
+	background-size:20%;
+}
+#div-pregunta{
+	height: 100%;
+
+	background: transparent url("../imagenes/pregunta.gif") no-repeat;
+	background-size:20%;
+	background-position-x: 80%;
+}
+#div-encuesta{
+	height: 100%;
+
+	background: transparent url("../imagenes/encuesta.gif") no-repeat;
+	background-size:20%;
+	
 }

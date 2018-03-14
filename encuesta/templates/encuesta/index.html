@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 {% block container %}
 	<h1 class="col-md-12 text-center">Encuesta Supervisores</h1>
-<p> La Universidad de la costa CUC lo invita a realizar la encuesta de  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+<p class="text-justify"> La Universidad de la costa CUC lo invita a realizar la encuesta de  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<a class="btn btn-success" href="{% url 'encuesta:preguntas' 1 %}">Iniciar</a>
+<div class="col-md-12 text-center"><a class="btn btn-default " href="{% url 'encuesta:preguntas' 1 %}" style="width: 20%;">Iniciar</a></div>
+<div id="div-encuesta"></div>
 {% endblock container %}
