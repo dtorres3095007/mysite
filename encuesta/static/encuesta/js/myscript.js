@@ -1,6 +1,6 @@
 $(document).ready(function () {
-$("#principal").show("slow");
+$("#principal").fadeIn();
 $("#closeMen").clic(function(){
-	
+
 })
 })
